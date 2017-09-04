@@ -91,11 +91,8 @@ module.exports = function (levels, isProd) {
 
         // js
         [techs.browserJs, {
-            includeYM: false
-        }],
-        [techs.fileMerge, {
             target: '?.js',
-            sources: ['?.browser.js', '?.browser.bemhtml.js']
+            includeYM: false
         }],
 
         // optimize
